@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="220" height="50" viewBox="0 0 220 50" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Rectangle with Gradient -->
+    <defs>
+        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#0066cc;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#004999;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    
+    <!-- Logo Container -->
+    <g transform="translate(10, 5)">
+        <!-- Circular Background -->
+        <circle cx="20" cy="20" r="18" fill="url(#logoGradient)" />
+        
+        <!-- RG Text -->
+        <text x="20" y="27" 
+              text-anchor="middle" 
+              font-family="Arial, sans-serif" 
+              font-weight="bold" 
+              font-size="20" 
+              fill="white">
+            RG
+        </text>
+    </g>
+    
+    <!-- Company Name -->
+    <text x="60" y="28" 
+          font-family="Arial, sans-serif" 
+          font-weight="bold" 
+          font-size="16" 
+          fill="white">
+        PLUMBING &amp; HOME
+    </text>
+    <text x="60" y="42" 
+          font-family="Arial, sans-serif" 
+          font-weight="bold" 
+          font-size="12" 
+          fill="white">
+        IMPROVEMENTS
+    </text>
+</svg> 
