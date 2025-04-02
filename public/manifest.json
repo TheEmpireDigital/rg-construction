@@ -1,0 +1,16 @@
+{
+    "name": "RG Plumbing & Home Improvements",
+    "short_name": "RG Plumbing",
+    "description": "Professional plumbing and construction services in Johannesburg",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#1e3a8a",
+    "theme_color": "#1e3a8a",
+    "icons": [
+        {
+            "src": "/images/icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+} 

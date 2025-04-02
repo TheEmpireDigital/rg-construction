@@ -1,8 +1,23 @@
 @extends('layouts.app')
 
-@section('title', $service['title'])
+@section('title', $service['title'] . ' - RG Plumbing & Home Improvements')
 
 @section('content')
+    <!-- SEO Component with Schema -->
+    @php
+        $schema = \App\Helpers\SeoHelper::getServiceSchema(
+            $service['title'],
+            $service['description'],
+            $service['image'] ?? asset('images/services/placeholder.jpg')
+        );
+    @endphp
+    <x-seo 
+        title="{{ $service['title'] }} - RG Plumbing & Home Improvements"
+        description="{{ $service['description'] }}"
+        canonical="{{ url('/services/' . $service['slug']) }}"
+        schema="{{ $schema }}"
+    />
+
     <!-- Service Banner -->
     <div class="relative h-96">
         <img src="{{ $service['banner_image'] }}" alt="{{ $service['title'] }}" class="w-full h-full object-cover">

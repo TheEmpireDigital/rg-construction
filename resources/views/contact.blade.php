@@ -1,8 +1,19 @@
 @extends('layouts.app')
 
-@section('title', 'Contact Us')
+@section('title', 'Contact RG Plumbing & Home Improvements - Get in Touch')
 
 @section('content')
+    <!-- SEO Component with Schema -->
+    @php
+        $schema = \App\Helpers\SeoHelper::getContactPointSchema();
+    @endphp
+    <x-seo 
+        title="Contact RG Plumbing & Home Improvements - Get in Touch"
+        description="Contact RG Plumbing & Home Improvements for professional plumbing and construction services in Johannesburg. Available 24/7 for emergency services. Call us today!"
+        canonical="{{ url('/contact') }}"
+        schema="{{ $schema }}"
+    />
+
     <!-- Contact Banner -->
     <div class="relative h-64">
         <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" alt="Contact Us" class="w-full h-full object-cover">
@@ -50,21 +61,21 @@
                             <!-- Name -->
                             <div>
                                 <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
-                                <input type="text" name="name" id="name" value="{{ old('name') }}" required
+                                <input type="text" name="name" id="name" value="{{ old('name') }}" required autocomplete="name"
                                     class="mt-1 block w-full rounded-md border border-gray-300 bg-gray-50 shadow-sm focus:border-blue-500 focus:ring-blue-500 py-3 px-4 text-base hover:bg-white focus:bg-white transition-colors duration-200">
                             </div>
 
                             <!-- Email -->
                             <div>
                                 <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
-                                <input type="email" name="email" id="email" value="{{ old('email') }}" required
+                                <input type="email" name="email" id="email" value="{{ old('email') }}" required autocomplete="email"
                                     class="mt-1 block w-full rounded-md border border-gray-300 bg-gray-50 shadow-sm focus:border-blue-500 focus:ring-blue-500 py-3 px-4 text-base hover:bg-white focus:bg-white transition-colors duration-200">
                             </div>
 
                             <!-- Phone -->
                             <div>
                                 <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
-                                <input type="tel" name="phone" id="phone" value="{{ old('phone') }}" required
+                                <input type="tel" name="phone" id="phone" value="{{ old('phone') }}" required autocomplete="tel"
                                     class="mt-1 block w-full rounded-md border border-gray-300 bg-gray-50 shadow-sm focus:border-blue-500 focus:ring-blue-500 py-3 px-4 text-base hover:bg-white focus:bg-white transition-colors duration-200">
                             </div>
 
@@ -96,16 +107,9 @@
                                         <option value="steel_works">Steel Work Construction</option>
                                         <option value="carports">Carports & Gates</option>
                                     </optgroup>
-                                    <option value="other">Other (Please specify)</option>
+                                    <option value="other">Other (Specify in message)</option>
                                 </select>
                             </div>
-                        </div>
-
-                        <!-- Other Service - Full Width -->
-                        <div id="other_service_div" class="hidden">
-                            <label for="other_service" class="block text-sm font-medium text-gray-700 mb-2">Specify Other Service</label>
-                            <input type="text" name="other_service" id="other_service"
-                                class="mt-1 block w-full rounded-md border border-gray-300 bg-gray-50 shadow-sm focus:border-blue-500 focus:ring-blue-500 py-3 px-4 text-base hover:bg-white focus:bg-white transition-colors duration-200">
                         </div>
 
                         <!-- Message - Full Width -->
@@ -135,7 +139,9 @@
                         </div>
                         <h3 class="text-lg font-semibold mb-2">Phone</h3>
                         <p class="text-gray-600">24/7 Available</p>
-                        <a href="tel:+27123456789" class="text-blue-600 hover:text-blue-800">+27 12 345 6789</a>
+                        <a href="tel:+27717520270" class="text-blue-600 hover:text-blue-800">+27 71 752 0270</a>
+                        <br>
+                        <a href="tel:+27839805130" class="text-blue-600 hover:text-blue-800">+27 83 980 5130</a>
                     </div>
 
                     <div class="text-center">
@@ -146,7 +152,7 @@
                         </div>
                         <h3 class="text-lg font-semibold mb-2">Email</h3>
                         <p class="text-gray-600">Send us an email</p>
-                        <a href="mailto:info@rgplumbing.co.za" class="text-blue-600 hover:text-blue-800">info@rgplumbing.co.za</a>
+                        <a href="mailto:hello@rgplumbing.co.za" class="text-blue-600 hover:text-blue-800">hello@rgplumbing.co.za</a>
                     </div>
 
                     <div class="text-center">
@@ -164,19 +170,4 @@
             </div>
         </div>
     </div>
-
-    @push('scripts')
-    <script>
-        document.getElementById('service_type').addEventListener('change', function() {
-            const otherServiceDiv = document.getElementById('other_service_div');
-            if (this.value === 'other') {
-                otherServiceDiv.classList.remove('hidden');
-                document.getElementById('other_service').setAttribute('required', 'required');
-            } else {
-                otherServiceDiv.classList.add('hidden');
-                document.getElementById('other_service').removeAttribute('required');
-            }
-        });
-    </script>
-    @endpush
 @endsection 

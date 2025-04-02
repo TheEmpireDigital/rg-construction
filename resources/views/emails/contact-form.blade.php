@@ -10,7 +10,7 @@ You have received a new service inquiry from the website contact form.
 
 **Service Required:**
 @if($data['service_type'] === 'other')
-- {{ $data['other_service'] }}
+- Other (See message for details)
 @else
 - {{ ucwords(str_replace('_', ' ', $data['service_type'])) }}
 @endif

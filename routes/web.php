@@ -3,10 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HomeController;
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // Service Routes
 Route::get('/services/plumbing', [ServiceController::class, 'plumbing'])->name('service.plumbing');
@@ -22,3 +21,8 @@ Route::post('/contact', [ContactController::class, 'submit'])->name('contact.sub
 Route::get('/gallery', function () {
     return view('gallery');
 })->name('gallery');
+
+// Privacy Policy Route
+Route::get('/privacy-policy', function () {
+    return view('privacy-policy');
+})->name('privacy');

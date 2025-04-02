@@ -10,6 +10,7 @@ class ServiceController extends Controller
     {
         $services = [
             'plumbing' => [
+                'slug' => 'plumbing',
                 'title' => 'Plumbing Services',
                 'subtitle' => 'Expert Plumbing Solutions for Commercial & Industrial',
                 'banner_image' => 'https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
@@ -39,6 +40,7 @@ class ServiceController extends Controller
                 ]
             ],
             'water-solutions' => [
+                'slug' => 'water-solutions',
                 'title' => 'Water Solutions',
                 'subtitle' => 'Complete Water Management Systems',
                 'banner_image' => 'https://images.unsplash.com/photo-1584267385494-9fdd9a71ad75?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
@@ -68,6 +70,7 @@ class ServiceController extends Controller
                 ]
             ],
             'construction' => [
+                'slug' => 'construction',
                 'title' => 'Construction & Steel Works',
                 'subtitle' => 'Professional Construction Solutions',
                 'banner_image' => 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
@@ -97,6 +100,7 @@ class ServiceController extends Controller
                 ]
             ],
             'emergency' => [
+                'slug' => 'emergency',
                 'title' => '24/7 Emergency Services',
                 'subtitle' => 'Round-the-Clock Emergency Response',
                 'banner_image' => 'https://images.unsplash.com/photo-1581094288338-2314dddb7ece?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
@@ -126,6 +130,7 @@ class ServiceController extends Controller
                 ]
             ],
             'maintenance' => [
+                'slug' => 'maintenance',
                 'title' => 'Maintenance Services',
                 'subtitle' => 'Preventive Maintenance Solutions',
                 'banner_image' => 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
@@ -155,6 +160,7 @@ class ServiceController extends Controller
                 ]
             ],
             'specialized' => [
+                'slug' => 'specialized',
                 'title' => 'Specialized Solutions',
                 'subtitle' => 'Custom Industrial & Commercial Solutions',
                 'banner_image' => 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',

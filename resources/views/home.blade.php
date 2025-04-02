@@ -1,8 +1,19 @@
 @extends('layouts.app')
 
-@section('title', 'Home')
+@section('title', 'RG Plumbing & Home Improvements - Professional Plumbing & Construction Services in Johannesburg')
 
 @section('content')
+    <!-- SEO Component with Schema -->
+    @php
+        $schema = \App\Helpers\SeoHelper::getLocalBusinessSchema();
+    @endphp
+    <x-seo 
+        title="RG Plumbing & Home Improvements - Professional Plumbing & Construction Services in Johannesburg"
+        description="Expert plumbing, water solutions, and construction services in Johannesburg. Available 24/7 for emergency services. Licensed professionals with years of experience."
+        canonical="{{ url('/') }}"
+        schema="{{ $schema }}"
+    />
+
     <!-- Hero Section with Auto Scroll -->
     <div class="hero-slider">
         <!-- Slide 1 - Commercial & Industrial -->
@@ -132,101 +143,20 @@
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-900">Comprehensive Commercial & Industrial Solutions</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Plumbing Services -->
+                @foreach($services as $service)
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-lift">
-                    <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Plumbing Services" class="w-full h-48 object-cover">
+                    <img src="{{ $service['image'] }}" alt="{{ $service['title'] }}" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-4">Professional Plumbing</h3>
+                        <h3 class="text-xl font-semibold mb-4">{{ $service['title'] }}</h3>
                         <ul class="text-gray-600 space-y-2">
-                            <li>• Drain Cleaning & Maintenance</li>
-                            <li>• Pipe Leak Repairs</li>
-                            <li>• Advanced Leak Detection</li>
-                            <li>• Geyser Services</li>
-                            <li>• Bathroom Installations</li>
-                            <li>• Sewer Line Solutions</li>
+                            @foreach($service['features'] as $feature)
+                            <li>• {{ $feature }}</li>
+                            @endforeach
                         </ul>
-                        <a href="{{ route('service.plumbing') }}" class="mt-6 inline-block text-blue-600 hover:text-blue-800">Learn More →</a>
+                        <a href="{{ route($service['route']) }}" class="mt-6 inline-block text-blue-600 hover:text-blue-800">Learn More →</a>
                     </div>
                 </div>
-
-                <!-- Water Solutions -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-lift">
-                    <img src="https://images.unsplash.com/photo-1584267385494-9fdd9a71ad75?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Water Solutions" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-4">Water Management Systems</h3>
-                        <ul class="text-gray-600 space-y-2">
-                            <li>• JoJo Tank Installation</li>
-                            <li>• Heat Pump Systems</li>
-                            <li>• Borehole Installation</li>
-                            <li>• Solar Geyser Solutions</li>
-                            <li>• Septic Tank Services</li>
-                            <li>• Water System Maintenance</li>
-                        </ul>
-                        <a href="{{ route('service.water-solutions') }}" class="mt-6 inline-block text-blue-600 hover:text-blue-800">Learn More →</a>
-                    </div>
-                </div>
-
-                <!-- Construction Services -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-lift">
-                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Construction Services" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-4">Construction & Steel Works</h3>
-                        <ul class="text-gray-600 space-y-2">
-                            <li>• Building & Renovations</li>
-                            <li>• Professional Painting</li>
-                            <li>• Paving Solutions</li>
-                            <li>• Roof Repairs & Installation</li>
-                            <li>• Steel Work Construction</li>
-                            <li>• Carports & Gates</li>
-                        </ul>
-                        <a href="{{ route('service.construction') }}" class="mt-6 inline-block text-blue-600 hover:text-blue-800">Learn More →</a>
-                    </div>
-                </div>
-
-                <!-- Emergency Services -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-lift">
-                    <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Emergency Services" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-4">Emergency Services</h3>
-                        <ul class="text-gray-600 space-y-2">
-                            <li>• 24/7 Availability</li>
-                            <li>• Rapid Response</li>
-                            <li>• Emergency Repairs</li>
-                            <li>• Quick Solutions</li>
-                        </ul>
-                        <a href="{{ route('service.emergency') }}" class="mt-6 inline-block text-blue-600 hover:text-blue-800">Learn More →</a>
-                    </div>
-                </div>
-
-                <!-- Maintenance -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-lift">
-                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Maintenance Services" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-4">Maintenance Services</h3>
-                        <ul class="text-gray-600 space-y-2">
-                            <li>• Regular Inspections</li>
-                            <li>• Preventive Maintenance</li>
-                            <li>• System Upgrades</li>
-                            <li>• Quality Checks</li>
-                        </ul>
-                        <a href="{{ route('service.maintenance') }}" class="mt-6 inline-block text-blue-600 hover:text-blue-800">Learn More →</a>
-                    </div>
-                </div>
-
-                <!-- Specialized Solutions -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-lift">
-                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Specialized Solutions" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-4">Specialized Solutions</h3>
-                        <ul class="text-gray-600 space-y-2">
-                            <li>• Custom Installations</li>
-                            <li>• System Design</li>
-                            <li>• Expert Consultation</li>
-                            <li>• Modern Technology</li>
-                        </ul>
-                        <a href="{{ route('service.specialized') }}" class="mt-6 inline-block text-blue-600 hover:text-blue-800">Learn More →</a>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
@@ -242,7 +172,9 @@
                             <h3 class="text-xl font-semibold mb-4">Emergency Service</h3>
                             <p class="text-blue-100 mb-4">Available 24/7 for urgent plumbing needs</p>
                             <p class="text-blue-100 mb-2">
-                                <strong>Phone:</strong> +27 71 752 0270
+                                <strong>Phone:</strong><br>
+                                +27 71 752 0270<br>
+                                +27 83 980 5130
                             </p>
                             <p class="text-blue-100">
                                 <strong>Service Areas:</strong><br>

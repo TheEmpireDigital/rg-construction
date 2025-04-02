@@ -1,2 +1,11 @@
 User-agent: *
-Disallow:
+Allow: /
+Allow: /services/
+Allow: /contact
+Allow: /gallery
+Disallow: /admin/
+Disallow: /login
+Disallow: /register
+Disallow: /password/
+Disallow: /email/
+Sitemap: https://rgplumbing.co.za/sitemap.xml
