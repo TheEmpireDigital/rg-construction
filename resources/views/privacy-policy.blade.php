@@ -54,7 +54,7 @@
             <p>Our call-out fee policy is structured based on the distance to your location:</p>
             <ul class="list-disc pl-6 mb-6">
                 <li><strong>0-7 kilometers:</strong> No call-out fee applies</li>
-                <li><strong>Over 7 kilometers:</strong> Call-out fees start from R300, with the final amount depending on the distance to your location</li>
+                <li><strong>Over 7 kilometers:</strong> Call-out fees start from R350, with the final amount depending on the distance to your location</li>
             </ul>
             <p>Please note:</p>
             <ul class="list-disc pl-6 mb-6">
