@@ -153,7 +153,7 @@
                             </svg>
                         </div>
                         <h3 class="text-xl font-semibold mb-2">Wide Coverage</h3>
-                        <p class="text-blue-100">Serving all areas in Johannesburg</p>
+                        <p class="text-blue-100">Serving all areas in Johannesburg & Ekurhuleni</p>
                     </div>
                 </div>
             </div>
@@ -193,8 +193,8 @@
                         <div>
                             <h3 class="text-xl font-semibold mb-4">Service Areas:</h3>
                             <p class="text-blue-100 mb-2">
-                                • Johannesburg (North, South, East & West)<br>
-                                • Ekurhuleni (North, South, East & West)<br>
+                                • Johannesburg<br>
+                                • Ekurhuleni<br>
                                 • Other areas by arrangement
                             </p>
                             <p class="text-blue-100 mt-6 pt-6 border-t border-blue-900">

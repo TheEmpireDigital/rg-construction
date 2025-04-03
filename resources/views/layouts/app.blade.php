@@ -107,7 +107,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
                     <h3 class="text-xl font-bold mb-4">RG Plumbing & Home Improvements</h3>
-                    <p class="text-blue-200">Your trusted partner for all plumbing and construction needs in Johannesburg.</p>
+                    <p class="text-blue-200">Your trusted partner for all plumbing and construction needs in Johannesburg & Ekurhuleni.</p>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Contact Us</h3>
@@ -118,8 +118,8 @@
                 <div>
                     <h3 class="text-xl font-bold mb-4">Service Areas</h3>
                     <p class="text-blue-200">
-                        • Johannesburg (North, South, East & West)<br>
-                        • Ekurhuleni (North, South, East & West)<br>
+                        • Johannesburg<br>
+                        • Ekurhuleni<br>
                         • <em>Other areas by arrangement</em>
                     </p>
                 </div>

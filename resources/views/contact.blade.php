@@ -153,9 +153,11 @@
                         <h3 class="text-lg font-semibold mb-2">Email</h3>
                         <p class="text-gray-600">Send us an email</p>
                         <a href="mailto:hello@rgplumbing.co.za" class="text-blue-600 hover:text-blue-800">hello@rgplumbing.co.za</a>
+                        <a href="mailto:inquiry@rgplumbing.co.za" class="text-blue-600 hover:text-blue-800">inquiry@rgplumbing.co.za</a>
+
                     </div>
 
-                    <div class="text-center">
+                    <div class="text-left">
                         <div class="bg-gradient-blue text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
@@ -165,10 +167,10 @@
                         <h3 class="text-lg font-semibold mb-2">Location</h3>
                         <p class="text-gray-600 mb-2">Service Areas:</p>
                         <p class="text-gray-600">
-                            • Johannesburg (North, South, East & West)<br>
-                            • Ekurhuleni (North, South, East & West)
+                            • Johannesburg<br>
+                            • Ekurhuleni<br>
+                            • Other areas by arrangement
                         </p>
-                        <p class="text-gray-600 mt-2 text-sm">Other areas by arrangement</p>
                     </div>
                 </div>
 

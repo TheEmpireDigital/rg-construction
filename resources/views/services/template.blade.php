@@ -72,7 +72,7 @@
                     <h2 class="text-3xl font-bold mb-4">Ready to Get Started?</h2>
                     <p class="text-gray-600 mb-8">Contact us now for a free consultation and quote</p>
                     <a href="{{ route('contact') }}" class="bg-gradient-blue hover:bg-gradient-blue-dark text-white font-bold py-3 px-8 rounded-lg inline-block transition-all duration-300 shadow-lg hover:shadow-xl">
-                        Contact Us
+                        Get a Free Quote
                     </a>
                 </div>
             </div>
