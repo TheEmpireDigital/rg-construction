@@ -10,7 +10,6 @@
 
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.bunny.net">
-    <link rel="preconnect" href="https://unpkg.com">
     <link rel="preconnect" href="https://images.unsplash.com">
     
     <!-- Fonts -->
@@ -32,12 +31,12 @@
     <meta name="format-detection" content="telephone=no">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/icons/favicon-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/icons/favicon-16x16.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('images/icons/icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('images/icons/icon-192x192.png') }}">
     <link rel="icon" type="image/x-icon" href="{{ asset('images/icons/favicon.ico') }}">
     
     <!-- Alpine.js -->
-    <script defer src="https://unpkg.com/alpinejs@3.13.3/dist/cdn.min.js"></script>
+    <script defer src="{{ asset('js/alpinejs@3.14.9.min.js') }}"></script>
     <script src="{{ asset('js/cookie-consent.js') }}" defer></script>
     <style>
         [x-cloak] { display: none !important; }
@@ -50,7 +49,7 @@
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
                     <a href="{{ route('home') }}" class="flex items-center">
-                        <img src="{{ asset('images/brand/placeholder-logo.svg') }}" alt="RG Plumbing & Home Improvements" class="h-10 w-auto">
+                        <img src="{{ asset('images/brand/logo.png') }}" alt="RG Plumbing & Home Improvements" class="h-10 w-auto">
                     </a>
                 </div>
                 <div class="hidden md:flex space-x-8">
