@@ -50,10 +50,25 @@
                 <li>Right to withdraw consent</li>
             </ul>
             
+            <h2 class="text-2xl font-semibold text-blue-800 mt-8 mb-4">Call-Out Fees</h2>
+            <p>Our call-out fee policy is structured based on the distance to your location:</p>
+            <ul class="list-disc pl-6 mb-6">
+                <li><strong>0-7 kilometers:</strong> No call-out fee applies</li>
+                <li><strong>Over 7 kilometers:</strong> Call-out fees start from R300, with the final amount depending on the distance to your location</li>
+            </ul>
+            <p>Please note:</p>
+            <ul class="list-disc pl-6 mb-6">
+                <li>Distance is calculated from our base of operations</li>
+                <li>The exact call-out fee will be communicated before service confirmation</li>
+                <li>Call-out fees are separate from the actual service charges</li>
+                <li>Emergency call-outs may have different rates depending on the urgency of the service and the time of day</li>
+            </ul>
+            
             <h2 class="text-2xl font-semibold text-blue-800 mt-8 mb-4">Contact Us</h2>
             <p>If you have any questions about this Privacy Policy, please contact us:</p>
             <ul class="list-none pl-0 mb-6">
                 <li>By email: hello@rgplumbing.co.za</li>
+                <li>By email: inquiry@rgplumbing.co.za</li>
                 <li>By phone: +27 71 752 0270</li>
                 <li>By phone: +27 83 980 5130</li>
             </ul>

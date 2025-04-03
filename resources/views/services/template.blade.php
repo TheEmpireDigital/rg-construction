@@ -70,9 +70,9 @@
                 <!-- Call to Action -->
                 <div class="text-center">
                     <h2 class="text-3xl font-bold mb-4">Ready to Get Started?</h2>
-                    <p class="text-gray-600 mb-8">Contact us now for a free consultation and quote</p>
+                    <p class="text-gray-600 mb-8">Contact us now for consultation and quote. Site inspections within 7 km are free, otherwise a <a href="{{ route('privacy') }}#call-out-fees" class="underline hover:text-orange-500">call-out fee</a> applies.</p>
                     <a href="{{ route('contact') }}" class="bg-gradient-blue hover:bg-gradient-blue-dark text-white font-bold py-3 px-8 rounded-lg inline-block transition-all duration-300 shadow-lg hover:shadow-xl">
-                        Get a Free Quote
+                        Get a Quote *
                     </a>
                 </div>
             </div>

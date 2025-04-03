@@ -91,7 +91,7 @@
         <!-- CTA Button -->
         <div class="absolute bottom-6 left-0 right-0 z-20 text-center">
             <a href="{{ route('contact') }}" class="bg-gradient-blue hover:bg-gradient-blue-dark text-white font-bold py-2 px-6 rounded-lg inline-block transition-all duration-300 shadow-lg hover:shadow-xl">
-                Get a Free Quote
+                Get a Quote *
             </a>
         </div>
     </div>
