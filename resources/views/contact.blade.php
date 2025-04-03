@@ -163,8 +163,22 @@
                             </svg>
                         </div>
                         <h3 class="text-lg font-semibold mb-2">Location</h3>
-                        <p class="text-gray-600">Johannesburg</p>
-                        <p class="text-gray-600">South Africa</p>
+                        <p class="text-gray-600 mb-2">Service Areas:</p>
+                        <p class="text-gray-600">
+                            • Johannesburg (North, South, East & West)<br>
+                            • Ekurhuleni (North, South, East & West)
+                        </p>
+                        <p class="text-gray-600 mt-2 text-sm">Other areas by arrangement</p>
+                    </div>
+                </div>
+
+                <!-- Company Registration Info -->
+                <div class="mt-12 text-center">
+                    <div class="inline-block border-t border-gray-200 pt-6">
+                        <p class="text-gray-600 text-sm">
+                            <strong>RG PLUMBING AND HOME IMPROVEMENT (PTY) LTD</strong><br>
+                            Registration Number: 2023/820460/07
+                        </p>
                     </div>
                 </div>
             </div>

@@ -117,7 +117,11 @@
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Service Areas</h3>
-                    <p class="text-blue-200">All Areas Johannesburg<br>Out of Johannesburg (by arrangement)</p>
+                    <p class="text-blue-200">
+                        • Johannesburg (North, South, East & West)<br>
+                        • Ekurhuleni (North, South, East & West)<br>
+                        • <em>Other areas by arrangement</em>
+                    </p>
                 </div>
             </div>
             <div class="mt-8 pt-8 border-t border-blue-800 text-center text-blue-200">
