@@ -156,40 +156,41 @@ function imageViewer() {
         currentIndex: 0,
         categories: {
             plumbing: [
-                { src: 'https://placehold.co/800x600/0066cc/white?text=Plumbing+1', caption: 'Professional pipe installation' },
-                { src: 'https://placehold.co/800x600/0066cc/white?text=Plumbing+2', caption: 'Leak detection and repair' },
-                { src: 'https://placehold.co/800x600/0066cc/white?text=Plumbing+3', caption: 'Bathroom plumbing services' },
-                { src: 'https://placehold.co/800x600/0066cc/white?text=Plumbing+4', caption: 'Kitchen plumbing solutions' }
+                { src: '{{ asset("images/gallery/plumbing/1.jpg") }}', caption: 'Drainage installation' },
+                { src: '{{ asset("images/gallery/plumbing/2.jpg") }}', caption: 'Drainage Leak detection and repair' },
+                { src: '{{ asset("images/gallery/plumbing/3.jpg") }}', caption: 'Drainage Installation' },
+                { src: '{{ asset("images/gallery/plumbing/2.jpg") }}', caption: 'Drainage repair' }
             ],
             water: [
-                { src: 'https://placehold.co/800x600/0066cc/white?text=Water+1', caption: 'Water tank installation' },
-                { src: 'https://placehold.co/800x600/0066cc/white?text=Water+2', caption: 'Water storage solutions' },
-                { src: 'https://placehold.co/800x600/0066cc/white?text=Water+3', caption: 'Water treatment systems' },
-                { src: 'https://placehold.co/800x600/0066cc/white?text=Water+4', caption: 'Water pump installation' }
+                { src: '{{ asset("images/gallery/water/pic1.png") }}', caption: 'Water tank installation' },
+                { src: '{{ asset("images/gallery/water/pic1.png") }}', caption: 'Water tank installation' },
+                { src: '{{ asset("images/gallery/water/pic1.png") }}', caption: 'Water tank installation' },
+                { src: '{{ asset("images/gallery/water/pic1.png") }}', caption: 'Water tank installation' },
+
             ],
             construction: [
-                { src: 'https://placehold.co/800x600/0066cc/white?text=Construction+1', caption: 'Major renovation projects' },
-                { src: 'https://placehold.co/800x600/0066cc/white?text=Construction+2', caption: 'Home improvements' },
-                { src: 'https://placehold.co/800x600/0066cc/white?text=Construction+3', caption: 'Building extensions' },
-                { src: 'https://placehold.co/800x600/0066cc/white?text=Construction+4', caption: 'Interior remodeling' }
+                { src: '{{ asset("images/gallery/construction/1.jpg") }}', caption: 'Renovation maintenance' },
+                { src: '{{ asset("images/gallery/construction/2.jpg") }}', caption: 'Painting and Decorating' },
+                { src: '{{ asset("images/gallery/construction/3.jpg") }}', caption: 'Industrial Building' },
+                { src: '{{ asset("images/gallery/maintenance/3.jpg") }}', caption: 'Residential Building' }
             ],
             emergency: [
-                { src: 'https://placehold.co/800x600/0066cc/white?text=Emergency+1', caption: '24/7 emergency response' },
-                { src: 'https://placehold.co/800x600/0066cc/white?text=Emergency+2', caption: 'Burst pipe repairs' },
-                { src: 'https://placehold.co/800x600/0066cc/white?text=Emergency+3', caption: 'Emergency leak fixes' },
-                { src: 'https://placehold.co/800x600/0066cc/white?text=Emergency+4', caption: 'Rapid response team' }
+                { src: '{{ asset("images/gallery/emergency/1.jpeg") }}', caption: 'Gyeser Roof leaks' },
+                { src: '{{ asset("images/gallery/emergency/2.jpg") }}', caption: 'Geyser Installation' },
+                { src: '{{ asset("images/gallery/emergency/3.jpg") }}', caption: 'Sink installation' },
+                { src: '{{ asset("images/gallery/emergency/4.jpg") }}', caption: 'Geyser Repairs' }
             ],
             maintenance: [
-                { src: 'https://placehold.co/800x600/0066cc/white?text=Maintenance+1', caption: 'Regular maintenance checks' },
-                { src: 'https://placehold.co/800x600/0066cc/white?text=Maintenance+2', caption: 'Preventive maintenance' },
-                { src: 'https://placehold.co/800x600/0066cc/white?text=Maintenance+3', caption: 'System inspections' },
-                { src: 'https://placehold.co/800x600/0066cc/white?text=Maintenance+4', caption: 'Maintenance contracts' }
+                { src: '{{ asset("images/gallery/maintenance/1.jpg") }}', caption: 'Bathroom maintenance' },
+                { src: '{{ asset("images/gallery/maintenance/2.jpg") }}', caption: 'Commercial Property maintenance' },
+                { src: '{{ asset("images/gallery/maintenance/3.jpg") }}', caption: 'Residential Property maintenance' },
+                { src: '{{ asset("images/gallery/maintenance/4.jpg") }}', caption: 'Water pipe maintenance' }
             ],
             specialized: [
-                { src: 'https://placehold.co/800x600/0066cc/white?text=Specialized+1', caption: 'Custom plumbing solutions' },
-                { src: 'https://placehold.co/800x600/0066cc/white?text=Specialized+2', caption: 'Specialized installations' },
-                { src: 'https://placehold.co/800x600/0066cc/white?text=Specialized+3', caption: 'Complex system design' },
-                { src: 'https://placehold.co/800x600/0066cc/white?text=Specialized+4', caption: 'Industrial plumbing' }
+                { src: '{{ asset("images/gallery/emergency/1.jpeg") }}', caption: 'Gyeser Roof leaks' },
+                { src: '{{ asset("images/gallery/emergency/2.jpg") }}', caption: 'Geyser Installation' },
+                { src: '{{ asset("images/gallery/emergency/3.jpg") }}', caption: 'Sink installation' },
+                { src: '{{ asset("images/gallery/emergency/4.jpg") }}', caption: 'Geyser Repairs' }
             ]
         },
         get currentImage() {
