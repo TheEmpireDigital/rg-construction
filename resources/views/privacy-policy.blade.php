@@ -67,7 +67,6 @@
             <h2 class="text-2xl font-semibold text-blue-800 mt-8 mb-4">Contact Us</h2>
             <p>If you have any questions about this Privacy Policy, please contact us:</p>
             <ul class="list-none pl-0 mb-6">
-                <li>By email: hello@rgplumbing.co.za</li>
                 <li>By email: inquiry@rgplumbing.co.za</li>
                 <li>By phone: +27 71 752 0270</li>
                 <li>By phone: +27 83 980 5130</li>

@@ -152,9 +152,7 @@
                         </div>
                         <h3 class="text-lg font-semibold mb-2">Email</h3>
                         <p class="text-gray-600">Send us an email</p>
-                        <a href="mailto:hello@rgplumbing.co.za" class="text-blue-600 hover:text-blue-800">hello@rgplumbing.co.za</a>
                         <a href="mailto:inquiry@rgplumbing.co.za" class="text-blue-600 hover:text-blue-800">inquiry@rgplumbing.co.za</a>
-
                     </div>
 
                     <div class="text-left">

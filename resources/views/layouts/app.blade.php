@@ -109,7 +109,6 @@
                     <h3 class="text-xl font-bold mb-4">Contact Us</h3>
                     <p class="text-blue-200">Phone: +27 71 752 0270</p>
                     <p class="text-blue-200">Phone: +27 83 980 5130</p>
-                    <p class="text-blue-200">Email: hello@rgplumbing.co.za</p>
                     <p class="text-blue-200">Email: inquiry@rgplumbing.co.za</p>
                 </div>
                 <div>
