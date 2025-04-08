@@ -199,9 +199,9 @@
                             </p>
                             <p class="text-blue-100 mt-6 pt-6 border-t border-blue-900">
                                 <strong>Phone:</strong><br>
-                                +27 71 752 0270<br>
-                                +27 83 980 5130
-                            </p> 
+                                +27 71 752 0270 &nbsp; hello@rgplumbing.co.za<br>
+                                +27 83 980 5130 &nbsp; inquiry@rgplumbing.co.za
+                            </p>
                         </div>
                         <div>
                             <h3 class="text-xl font-semibold mb-4">Business Hours</h3>
