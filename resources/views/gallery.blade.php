@@ -156,22 +156,22 @@ function imageViewer() {
         currentIndex: 0,
         categories: {
             plumbing: [
-                { src: '{{ asset("images/gallery/plumbing/1.jpg") }}', caption: 'Drainage installation' },
-                { src: '{{ asset("images/gallery/plumbing/2.jpg") }}', caption: 'Drainage Leak detection and repair' },
+                { src: '{{ asset("images/gallery/plumbing/pic1.jpeg") }}', caption: 'Sink / Basin installation' },
+                { src: '{{ asset("images/gallery/plumbing/pic2.png") }}', caption: 'Geyser Installation' },
                 { src: '{{ asset("images/gallery/plumbing/3.jpg") }}', caption: 'Drainage Installation' },
                 { src: '{{ asset("images/gallery/plumbing/2.jpg") }}', caption: 'Drainage repair' }
             ],
             water: [
                 { src: '{{ asset("images/gallery/water/pic1.png") }}', caption: 'Water tank installation' },
-                { src: '{{ asset("images/gallery/water/pic1.png") }}', caption: 'Water tank installation' },
-                { src: '{{ asset("images/gallery/water/pic1.png") }}', caption: 'Water tank installation' },
-                { src: '{{ asset("images/gallery/water/pic1.png") }}', caption: 'Water tank installation' },
+                { src: '{{ asset("images/gallery/water/pic2.jpg") }}', caption: 'Water tank installation' },
+                { src: '{{ asset("images/gallery/water/pic3.webp") }}', caption: 'Water Drilling Services' },
+                { src: '{{ asset("images/gallery/water/pic4.webp") }}', caption: 'Water Treatment Solutions' },
 
             ],
             construction: [
                 { src: '{{ asset("images/gallery/construction/1.jpg") }}', caption: 'Renovation maintenance' },
                 { src: '{{ asset("images/gallery/construction/2.jpg") }}', caption: 'Painting and Decorating' },
-                { src: '{{ asset("images/gallery/construction/3.jpg") }}', caption: 'Industrial Building' },
+                { src: '{{ asset("images/gallery/construction/pic3.png") }}', caption: 'Industrial Construction' },
                 { src: '{{ asset("images/gallery/maintenance/3.jpg") }}', caption: 'Residential Building' }
             ],
             emergency: [

@@ -42,7 +42,7 @@
 
         <!-- Slide 3 - Water Solutions -->
         <div class="slide" data-slide="3">
-            <img src="https://images.unsplash.com/photo-1584267385494-9fdd9a71ad75?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" alt="Water Solutions" class="slide-image">
+            <img src="{{ asset('images/gallery/water.jpeg') }}" alt="Water Solutions" class="slide-image">
             <div class="slide-overlay"></div>
             <div class="container mx-auto px-4 h-full flex items-start pt-16 slide-content">
                 <div class="max-w-3xl">

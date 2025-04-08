@@ -18,11 +18,6 @@
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     
-    <!-- PWA Support -->
-    <link rel="manifest" href="{{ asset('manifest.json') }}">
-    <meta name="theme-color" content="#1e3a8a">
-    <link rel="apple-touch-icon" href="{{ asset('images/icons/icon-192x192.png') }}">
-    
     <!-- Cookie and Privacy Settings -->
     <meta name="referrer" content="strict-origin-when-cross-origin">
     
@@ -140,21 +135,8 @@
         document.querySelector('.mobile-menu-button').addEventListener('click', function() {
             document.querySelector('.mobile-menu').classList.toggle('hidden');
         });
-        
-        // Service Worker Registration
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                navigator.serviceWorker.register('/sw.js')
-                    .then(function(registration) {
-                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
-                    })
-                    .catch(function(err) {
-                        console.log('ServiceWorker registration failed: ', err);
-                    });
-            });
-        }
     </script>
-    
+
     @stack('scripts')
 </body>
 </html> 
